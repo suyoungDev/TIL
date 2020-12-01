@@ -1,7 +1,7 @@
 # Today I learned
 ** 하루하루 배운 코드에 대한 기록 ** 
 
-# MarkDown
+## MarkDown
 # JavaScript
 # Node.js & Express
 # APIs

@@ -5,7 +5,7 @@
 > 단 한 줄이라도 매일 매일💥
 
 ### MarkDown
-#### [MarkDown문법](https://github.com/mochapoke/TIL/blob/main/MarkDown/grammar.md)
+- [MarkDown문법](https://github.com/mochapoke/TIL/blob/main/MarkDown/grammar.md)
 ### JavaScript
 ### Node.js & Express
 ### APIs

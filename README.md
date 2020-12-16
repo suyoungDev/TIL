@@ -9,6 +9,6 @@
 ### Node.js & Express
 
 ### Databases
-- [SQL](https://github.com/mochapoke/TIL/blob/main/Database/SQL.md)
+- [SQL 정리노트](https://github.com/mochapoke/TIL/blob/main/Database/SQL.md)
 ### React.js
 ### React Native

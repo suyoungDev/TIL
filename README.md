@@ -6,13 +6,9 @@
 
 ### MarkDown
 - [MarkDown문법](https://github.com/mochapoke/TIL/blob/main/MarkDown/grammar.md)
-### JavaScript
 ### Node.js & Express
-### APIs
-### EJS
+
 ### Databases
-### SQL
-### MongoDB
-#### Mongoose
+- [SQL](https://github.com/mochapoke/TIL/blob/main/Database/SQL.md)
 ### React.js
 ### React Native

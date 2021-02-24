@@ -47,7 +47,7 @@ export default (initalValue = null) => {
   const handler = useCallback(
     (e) => {
       const { name, value } = e.target;
-      setData({
+      setInput({
         ...input,
         [name]: value,
       });

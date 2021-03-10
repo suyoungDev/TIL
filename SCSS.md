@@ -1,3 +1,20 @@
+# 목차
+
+- [목차](#목차)
+  - [nested](#nested)
+  - [변수](#변수)
+    - [css에서는..](#css에서는)
+  - [map-get](#map-get)
+  - [선택자](#선택자)
+    - [다른 예시](#다른-예시)
+  - [partials](#partials)
+  - [@function](#function)
+  - [@mixin](#mixin)
+    - [mixin 예제: theme](#mixin-예제-theme)
+    - [mixin 예제: mobile (media quary)](#mixin-예제-mobile-media-quary)
+  - [@extend](#extend)
+  - [수학 연산자 사용 가능](#수학-연산자-사용-가능)
+
 ## nested
 
 일반적인 css보다 강력한 scss의 장점은 nested인 것 같다.
@@ -58,7 +75,7 @@ $font-weights: (
 아래가 규칙이다.
 첫번째 args는 map을 적용하고싶은 변수명, 두번째는 변수의 key.
 
-```scss
+```
 map-get($map: , $key: )
 ```
 
@@ -232,20 +249,18 @@ scss에서는 모듈화로 파일을 깔끔하게 관리 할 수 있다.
 으로 스타일을 상속 받을 수 있다.
 
 ```scss
-
 .main {
-    #{&}__paragraph1 {
-      font-weight: weight(bold);
-      &:hover {
-        color: pink;
-      }
+  #{&}__paragraph1 {
+    font-weight: weight(bold);
+    &:hover {
+      color: pink;
     }
+  }
 
-    #{&}__paragraph2 {
-      // extend만 작성했을 뿐인데 위의 스타일을 그대로
-      // 상속받을 수 있다!
-      @extend .main__paragraph1;
-    }
+  #{&}__paragraph2 {
+    // extend만 작성했을 뿐인데 위의 스타일을 그대로
+    // 상속받을 수 있다!
+    @extend .main__paragraph1;
   }
 }
 ```

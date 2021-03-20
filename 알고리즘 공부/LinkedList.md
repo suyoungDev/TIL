@@ -1,4 +1,5 @@
 ![linkedList](https://images.velog.io/images/mochapoke/post/576085b2-55e3-42b7-adf8-3b0e7ad01b17/linked.png)
+![참고](https://learnersbucket.com/tutorials/data-structures/linked-list-implementation-in-javascript/)
 각 노드는 데이터와 다음노드를 가리키는 링크와 데이터를 갖고있다.
 
 ## 배열과 linked list의 차이

@@ -4,6 +4,19 @@
 
 dictionary/lookup 와 관련된 작업을 할 때 유용하다.
 
+- ES6에서 소개된 **새로운 자료구조인 Map**을 사용한다
+- [mdn map 참고](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Map)
+- Map 객체는 키-값 쌍을 저장하며 각 쌍의 삽입 순서도 기억하는 콜렉션입니다. 아무 값(객체와 원시 값)이라도 키와 값으로 사용할 수 있습니다.
+- 명시적으로 제공한 키 외에 어떠한 키도 없음 (의도치 않은 키 없음)
+- Map의 키는 함수, 객체 등을 포함한 모든 키 가능
+  - Object는 string 또는 symbol이어야함
+- Map의 키는 정렬이 가능함. 순회는 삽입 순으로 이뤄짐
+  - Object는 정렬되지 않음
+- Map.prototype.size를 통해 쉽게 항목수를 알아 낼 수 있음
+- Map은 순회가능 하므로 바로 순회 할 수 있음.
+  - Object를 순회하려면 먼저 모든 키를 알아낸 후, 그 키의 배열을 순회해야 합니다.
+- 잦은 키-값 쌍의 추가와 제거에서 더 좋은 성능을 보임.
+
 ## Object vs Map
 
 ### Key Type

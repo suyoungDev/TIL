@@ -13,25 +13,20 @@ dictionary/lookup 와 관련된 작업을 할 때 유용하다.
 
 ```js
 const map = new Map();
-map.set(['a', 'b']);
-map.set([1, 'b']); // 숫자 허용
-map.set([{ key: value }, 'obj']); // obj 허용
+map.set('a', 'b');
+map.set(1, 'b'); // 숫자 허용
+map.set({ key: 'value' }, 'obj'); // obj 허용
+// Map(1) { { key: 'value' } => 'obj' }
 
 console.log([...map.keys()]);
-// [ [ 'a', 'b' ], [ 1, 'b' ], [ 2, 'obj' ] ]
-
+// // [ 'a' ]
 console.log(map.keys());
-// [Map Iterator] { [ 'a', 'b' ], [ 1, 'b' ], [ 2, 'obj' ] }
-
+// //  [Map Iterator] { 'a' }
 console.log(...map);
-// [ [ 'a', 'b' ], undefined ] [ [ 1, 'b' ], undefined ] [ [ 2, 'obj' ], undefined ]
-
+// // [ 'a', 'b' ]
 console.log(map);
-// Map(3) {
-//   [ 'a', 'b' ] => undefined,
-//   [ 1, 'b' ] => undefined,
-//   [ 2, 'obj' ] => undefined
-// }
+// Map(1) { 'a' => 'b' }
+// Map(1) { 1 => 'b' }
 ```
 
 ### 순서
